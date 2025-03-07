@@ -1,0 +1,1 @@
+Get-Service bits | Stop-Service
