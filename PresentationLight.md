@@ -1,0 +1,23 @@
+{
+            "background": "#F9F9F9",
+            "black": "#AB3D2C",
+            "blue": "#275FE4",
+            "brightBlack": "#C21458",
+            "brightBlue": "#0099E1",
+            "brightCyan": "#7B86BB",
+            "brightGreen": "#3D942E",
+            "brightPurple": "#CE33C0",
+            "brightRed": "#FF0308",
+            "brightWhite": "#AF30D6",
+            "brightYellow": "#0F35E8",
+            "cursorColor": "#F32759",
+            "cyan": "#5CC727",
+            "foreground": "#737373",
+            "green": "#257A24",
+            "name": "PresentLight",
+            "purple": "#823FF1",
+            "red": "#FF0028",
+            "selectionBackground": "#FF8F91",
+            "white": "#234D0E",
+            "yellow": "#DF631C"
+        }
