@@ -40,8 +40,21 @@ function new-userpassword1 {
         Write-Error "Password length must be at least 8 characters"
     }
     else {
-        $password = -join ((65..90) + (97..122) + (48..57) | Get-Random -Count $length | % { [char]$_ })
+        $password = -join ((65..90) + (97..122) + (48..57) + "!" + "@" + "#" | Get-Random -Count $length | % { [char]$_ })
         return $password
     }
 }
-new-userpassword1 -length 99
+new-userpassword1 -length 32
+
+1..10
+"a".."z"
+"A".."Z"
+
+function FunctionName {
+    param (
+        [ValidateSet("bits", "spooler", "xbox")]    
+    $servicename
+    )
+    Restart-service -name $servicename
+}
+FunctionName -servicename bbiuviuy

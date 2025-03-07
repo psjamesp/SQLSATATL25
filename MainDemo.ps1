@@ -346,3 +346,12 @@ Enter-PSSession -Session $session
 copy-item -fromsession $session -path c:\sql.msu -Destination d:\temp
 
 invoke-command srv01, srv02 -ScriptBlock { copy-item -path \\myserverpath\sqlupdate.msu -Destination d:\temp }
+
+
+
+
+$env:SystemDrive
+$env:HOMEPATH
+
+$IsMacOS
+$IsWindows
