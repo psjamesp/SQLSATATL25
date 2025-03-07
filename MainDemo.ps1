@@ -301,10 +301,15 @@ Get-PSSession
 invoke-command -Session $session -ScriptBlock {get-services bits | Start-Service}
 Get-PSSession | Remove-PSSession
 
-# File system
-Get-ChildItem
-Set-LocalGroup
-New-Item
+$Error[0] | Out-File C:\scripts\SQLSATATL25\error.txt -Append
+$null = get-service bits | Stop-Service
+get-service bits | Out-Null
+
+get-service | export-csv C:\scripts\SQLSATATL25\services.csv
+
+get-content C:\Scripts\SQLSATATL25\services.txt 
+$csv = import-csv C:\scripts\SQLSATATL25\services.csv
+
 
 Get-PSDrive
 
