@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+h1 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #0066cc;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    flex: 1;
+    min-width: 200px;
+    background-color: #e9ecef;
+    border-left: 5px solid #0066cc;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th {
+    background-color: #0066cc;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+.status-online {
+    color: green;
+    font-weight: bold;
+}
+
+.status-offline {
+    color: red;
+    font-weight: bold;
+}
+
+.status-error {
+    color: orange;
+    font-weight: bold;
+}
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.critical {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.timestamp {
+    font-style: italic;
+    color: #6c757d;
+    text-align: right;
+}

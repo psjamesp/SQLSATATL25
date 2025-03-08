@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Infrastructure Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        h1, h2, h3 {
+            color: #0066cc;
+        }
+        h1 {
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+        }
+        .section {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .summary-box {
+            background-color: #e9ecef;
+            border-left: 5px solid #0066cc;
+            padding: 10px 15px;
+            border-radius: 3px;
+        }
+        .status-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .status-box {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .status-online {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-offline {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .status-warning {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th {
+            background-color: #0066cc;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        .warning {
+            background-color: #fff3cd;
+        }
+        .critical {
+            background-color: #f8d7da;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+        .chart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            height: 300px;
+            position: relative;
+        }
+        .bar {
+            display: inline-block;
+            width: 40px;
+            margin: 0 10px;
+            position: absolute;
+            bottom: 40px;
+            background-color: #0066cc;
+            transition: height 0.5s ease;
+        }
+        .bar-label {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .axis {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Server Infrastructure Report</h1>
+    <p>Report generated on 2025-03-08 08:41:31</p>    <div class="section">
+        <h2>Executive Summary</h2>
+        <div class="status-container">
+            <div class="status-box status-online">
+                <h3>2</h3>
+                <div>Online</div>
+            </div>
+            <div class="status-box status-offline">
+                <h3>1</h3>
+                <div>Offline</div>
+            </div>
+            <div class="status-box status-warning">
+                <h3>0</h3>
+                <div>Error</div>
+            </div>
+        </div>
+        
+        <div class="summary-grid">
+            <div class="summary-box">
+                <strong>Total Servers:</strong> 3<br>
+                <strong>Avg Memory Usage:</strong> 35.82%<br>
+                <strong>Avg Disk Usage:</strong> 58.39%
+            </div>
+            <div class="summary-box">
+                <strong>High Memory Servers:</strong> .Count<br>
+                <strong>High Disk Usage Servers:</strong> @{ServerName=SRV02; Status=Online; OSName=Windows Server 2022 Standard; OSVersion=10.0.20348; Manufacturer=Dell Inc.; Model=PowerEdge R740; Processor=Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz; LogicalCores=8; TotalMemoryGB=52; FreeMemoryGB=43; MemoryUsedPercent=17.31; TotalDiskGB=643; FreeDiskGB=117; DiskUsedPercent=81.8; IPAddress=192.168.230.63; MACAddress=FB-EB-EC-81-37-23; LastBootTime=02/10/2025 08:41:31; UptimeDays=26; RunningServices=73; StoppedServices=28}.Count<br>
+                <strong>Avg Uptime:</strong> 33.67 days
+            </div>
+        </div>
+    </div>    <div class="section">
+        <h2>Disk Usage Overview</h2>
+        <div class="chart-container">
+            <div class="axis"></div>            <div class="bar" style="left: 30px; height: 204px; background-color: #ffc107;"></div>
+            <div class="bar-label" style="left: 30px;">SRV02<br>81.8%</div>            <div class="bar" style="left: 90px; height: 123px; background-color: #0066cc;"></div>
+            <div class="bar-label" style="left: 90px;">SRV01<br>49.09%</div>            <div class="bar" style="left: 150px; height: 111px; background-color: #0066cc;"></div>
+            <div class="bar-label" style="left: 150px;">DC01<br>44.28%</div>        </div>
+    </div>    <div class="section">
+        <h2>Server Details</h2>
+        <table>
+            <tr>
+                <th>Server Name</th>
+                <th>Status</th>
+                <th>Operating System</th>
+                <th>IP Address</th>
+                <th>Memory Usage</th>
+                <th>Disk Usage</th>
+                <th>Uptime</th>
+            </tr>
+                    <tr class="">
+            <td>SRV01</td>
+            <td>Online</td>
+            <td>Windows Server 2022 Standard</td>
+            <td>192.168.12.229</td>
+            <td>33.33%</td>
+            <td>49.09%</td>
+            <td>40 days</td>
+        </tr>        <tr class="warning">
+            <td>SRV02</td>
+            <td>Online</td>
+            <td>Windows Server 2022 Standard</td>
+            <td>192.168.230.63</td>
+            <td>17.31%</td>
+            <td>81.8%</td>
+            <td>26 days</td>
+        </tr>        <tr class="critical">
+            <td>DC01</td>
+            <td>Offline</td>
+            <td>Windows Server 2019 Datacenter</td>
+            <td>192.168.133.212</td>
+            <td>56.82%</td>
+            <td>44.28%</td>
+            <td>35 days</td>
+        </tr>
+        </table>
+    </div>    <div class="footer">
+        Server Infrastructure Report | IT Department | Generated by PowerShell
+    </div>
+</body>
+</html>

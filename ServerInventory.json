@@ -1,0 +1,116 @@
+[
+  {
+    "server_name": "SRV01",
+    "status": "offline",
+    "hardware": {
+      "manufacturer": "Dell Inc.",
+      "model": "PowerEdge R740",
+      "processor": "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz",
+      "logical_cores": 16
+    },
+    "operating_system": {
+      "name": "Windows Server 2022 Standard",
+      "version": "10.0.20348"
+    },
+    "resources": {
+      "memory": {
+        "total_gb": 35,
+        "free_gb": 30,
+        "used_percent": 14.29
+      },
+      "disk": {
+        "total_gb": 933,
+        "free_gb": 611,
+        "used_percent": 34.51
+      }
+    },
+    "network": {
+      "ip_address": "192.168.236.175",
+      "mac_address": "BA-08-B4-89-DC-94"
+    },
+    "uptime": {
+      "days": 27.0,
+      "last_boot": "2025-02-09T08:41:31.3294368-05:00"
+    },
+    "services": {
+      "running": 70,
+      "stopped": 22
+    }
+  },
+  {
+    "server_name": "SRV02",
+    "status": "online",
+    "hardware": {
+      "manufacturer": "HP",
+      "model": "PowerEdge R740",
+      "processor": "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz",
+      "logical_cores": 32
+    },
+    "operating_system": {
+      "name": "Windows Server 2022 Standard",
+      "version": "10.0.20348"
+    },
+    "resources": {
+      "memory": {
+        "total_gb": 34,
+        "free_gb": 7,
+        "used_percent": 79.41
+      },
+      "disk": {
+        "total_gb": 873,
+        "free_gb": 715,
+        "used_percent": 18.1
+      }
+    },
+    "network": {
+      "ip_address": "192.168.71.137",
+      "mac_address": "2F-25-2C-52-11-40"
+    },
+    "uptime": {
+      "days": 22.0,
+      "last_boot": "2025-02-14T08:41:31.3309881-05:00"
+    },
+    "services": {
+      "running": 67,
+      "stopped": 45
+    }
+  },
+  {
+    "server_name": "DC01",
+    "status": "online",
+    "hardware": {
+      "manufacturer": "HP",
+      "model": "PowerEdge R740",
+      "processor": "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz",
+      "logical_cores": 8
+    },
+    "operating_system": {
+      "name": "Windows Server 2019 Datacenter",
+      "version": "10.0.17763"
+    },
+    "resources": {
+      "memory": {
+        "total_gb": 27,
+        "free_gb": 20,
+        "used_percent": 25.93
+      },
+      "disk": {
+        "total_gb": 873,
+        "free_gb": 229,
+        "used_percent": 73.77
+      }
+    },
+    "network": {
+      "ip_address": "192.168.14.110",
+      "mac_address": "46-7E-91-53-1E-2F"
+    },
+    "uptime": {
+      "days": 28.0,
+      "last_boot": "2025-02-08T08:41:31.3318559-05:00"
+    },
+    "services": {
+      "running": 60,
+      "stopped": 41
+    }
+  }
+]

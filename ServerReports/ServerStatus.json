@@ -1,0 +1,79 @@
+{
+  "servers": [
+    {
+      "uptime_days": 40.0,
+      "os": "Windows Server 2022 Standard",
+      "resources": {
+        "memory": {
+          "free_gb": 18,
+          "used_percent": 33.33,
+          "total_gb": 27
+        },
+        "disk": {
+          "free_gb": 112,
+          "used_percent": 49.09,
+          "total_gb": 220
+        }
+      },
+      "ip_address": "192.168.12.229",
+      "name": "SRV01",
+      "status": "online"
+    },
+    {
+      "uptime_days": 26.0,
+      "os": "Windows Server 2022 Standard",
+      "resources": {
+        "memory": {
+          "free_gb": 43,
+          "used_percent": 17.31,
+          "total_gb": 52
+        },
+        "disk": {
+          "free_gb": 117,
+          "used_percent": 81.8,
+          "total_gb": 643
+        }
+      },
+      "ip_address": "192.168.230.63",
+      "name": "SRV02",
+      "status": "online"
+    },
+    {
+      "uptime_days": 35.0,
+      "os": "Windows Server 2019 Datacenter",
+      "resources": {
+        "memory": {
+          "free_gb": 19,
+          "used_percent": 56.82,
+          "total_gb": 44
+        },
+        "disk": {
+          "free_gb": 224,
+          "used_percent": 44.28,
+          "total_gb": 402
+        }
+      },
+      "ip_address": "192.168.133.212",
+      "name": "DC01",
+      "status": "offline"
+    }
+  ],
+  "report_metadata": {
+    "report_name": "Server Infrastructure Status",
+    "generated_at": "2025-03-08T08:41:31.4683071-05:00",
+    "server_count": 3
+  },
+  "summary": {
+    "status": {
+      "offline": 1,
+      "error": 0,
+      "online": 2
+    },
+    "resources": {
+      "high_disk_count": 1,
+      "high_memory_count": 0,
+      "avg_memory_usage": 35.82,
+      "avg_disk_usage": 58.39
+    }
+  }
+}
